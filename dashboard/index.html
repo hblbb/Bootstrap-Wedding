@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="full3" lang="en"><!-- The full page image background will only work if the html has the custom class set to it! Don't delete it! -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bernie and Jade's Wedding Party</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS for the 'Full' Template -->
+    <link href="../css/wedding.css" rel="stylesheet">
+    
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+ </head>
+
+  <body>
+
+    <!-- Navbar --!>  
+    <nav class="navbar navbar-fixed-bottom navbar-inverse" role="navigation">
+      <div class="container">
+        <!-- Navbar Icons--!>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./">Bernie and Jade's Wedding</a>
+        </div>
+
+        <!-- Buttons --!>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a data-toggle="modal" data-target="#inviteModal" href="#">數位喜帖</a></li>
+            <li><a data-toggle="modal" data-target="#weddingModal" href="#">婚宴訊息</a></li>
+            <li><a target="_blaink" href="http://wedding.bernie.twbbs.org">公告網頁</a></li>
+            <!-- <li><a href="#" id="qrcode">條碼開關</a></li> --!>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+    <!-- Slogan --!>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <h1>發現<label class="red">幸福</label></h1>
+            <p>簡單的<label class="blue">祝福</label>，它其實不簡單！</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Barcode --!>
+    <div id ="scanner">
+        <input type="hidden" id="clickTimes" value="">
+        <img src="../img/qrcode1.png" class="img-responsive" />
+        <label>前往手機輸入頁</label>
+    </div>
+
+    <!-- Statistics --!>
+    <div id="wishStats"></div>
+
+    <!-- Invitation --!>
+    <div class="modal fade" id="inviteModal" tabindex="-1" role="dialog" aria-labelledby="inviteLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="inviteLabel">
+                        <span class="glyphicon glyphicon-th-large"></span>
+                        數位喜帖 
+                        <span class="glyphicon glyphicon-th-large"></span>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <h4><span class="glyphicon glyphicon-circle-arrow-down"></span> 正面：</h4>
+                    <img src="../img/welcome1.jpg" class="img-responsive" />
+                    <h4><span class="glyphicon glyphicon-circle-arrow-down"></span> 反面：</h4>
+                    <img src="../img/welcome2.jpg" class="img-responsive" />
+                </div>
+                <!--
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">確認</button>
+                </div>
+                --!>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Information --!>
+    <div class="modal fade" id="weddingModal" tabindex="-1" role="dialog" aria-labelledby="weddingLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="weddingLabel">
+                        <span class="glyphicon glyphicon-heart"></span>
+                        喜宴時間 
+                        <span class="glyphicon glyphicon-heart"></span>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <h4><span class="glyphicon glyphicon-dashboard"></span> 時間：</h4>
+                    <p>民國 102 年 12 月 28 日（星期六）晚上 6 點舉行結婚典禮</p>
+                    <h4><span class="glyphicon glyphicon-cutlery"></span> 地點：</h4>
+                    <p>華王大飯店，二樓華宮廳 高雄市鹽埕區五福四路42號</p>
+                    <img src="../img/map.png" class="img-responsive" />
+                    <h4><span class="glyphicon glyphicon-user"> 桌次：</h4>
+                    <p>現場有專人指引，以及每桌都有來賓的名牌，請依序入席喔！</p>
+                </div>
+                <!--
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">確認</button>
+                </div>
+                --!>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/jquery-1.10.2.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/wedding.js"></script>
+
+  </body>
+
+</html>

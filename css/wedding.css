@@ -1,0 +1,78 @@
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: none;
+}
+
+.full1 {
+    background: url(../img/cover1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.full2 {
+    background: url(../img/cover2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.full3 {
+    background: url(../img/cover3.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.full4 {
+    background: url(../img/cover4.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.full5 {
+    background: url(../img/cover5.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.full6 {
+    background: url(../img/cover6.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+#scanner {
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+}
+
+#wishStats {
+    position: fixed;
+    bottom: 55px;
+    right: 10px;
+    height: 150px;
+    width: 250px;
+}
